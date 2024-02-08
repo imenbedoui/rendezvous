@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionrendevouz.controller.AddRendevouz">
+
+    <children>
+        <VBox alignment="CENTER" layoutX="171.0" layoutY="14.0" prefHeight="50.0" prefWidth="376.0" AnchorPane.topAnchor="14.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add RendeVouz" wrappingWidth="225.71289825439453">
+                    <font>
+                        <Font name="Arial" size="17.0" />
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+        <TextField fx:id="nom" layoutX="99.0" layoutY="103.0" promptText="nom" AnchorPane.topAnchor="103.0" />
+        <TextField fx:id="desc" layoutX="101.0" layoutY="161.0" prefHeight="26.0" prefWidth="150.0" promptText="description" />
+        <TextField fx:id="lieu" layoutX="102.0" layoutY="215.0" promptText="lieu" />
+        <TextField fx:id="tel" layoutX="326.0" layoutY="106.0" promptText="num-tel" AnchorPane.topAnchor="106.0" />
+        <DatePicker fx:id="datepickerdate" layoutX="329.0" layoutY="164.0" prefHeight="26.0" prefWidth="150.0" promptText="Date" AnchorPane.topAnchor="164.0" />
+        <Button layoutX="214.0" layoutY="306.0" mnemonicParsing="false" onAction="#ajouterRender" prefHeight="26.0" prefWidth="210.0" style="-fx-background-color: #4169e1;" text="ajouter" textFill="WHITE" />
+    </children>
+
+</AnchorPane>
